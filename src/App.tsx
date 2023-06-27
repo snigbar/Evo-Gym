@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import { SelectedPageType } from "./shared/types"
 import Home from "./Sections/Home"
 import Benifits from "./Sections/Benifits"
+import OurClasses from "./Sections/OurClasses"
+import ContactUs from "./Sections/ContactUs"
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} topOfPage={topOfPage}></Navbar>
         <Home setSelectedPage={setSelectedPage}></Home>
         <Benifits setSelectedPage={setSelectedPage}></Benifits>
+        <OurClasses setSelectedPage={setSelectedPage}></OurClasses>
+        <ContactUs setSelectedPage={setSelectedPage}></ContactUs>
       </div>
       
   )
