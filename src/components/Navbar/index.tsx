@@ -16,7 +16,7 @@ const Navbar = ({topOfPage,selectedPage,setSelectedPage}: SelectedPageProps) => 
 
     const [menutoggle, setMenutoggle] = useState<boolean>(false)
     const isAboveMedia = useMediaQuery("(min-width:1060px)")
-    const navBackground = topOfPage ? "":"bg-primary-100 drop-shadow"
+    const navBackground = topOfPage ? "":"bg-primary-100 drop-shadow opacity-95"
     console.log(topOfPage)
 
 
@@ -71,7 +71,8 @@ const Navbar = ({topOfPage,selectedPage,setSelectedPage}: SelectedPageProps) => 
         {/* mobile side menu */}
       { !isAboveMedia && menutoggle && 
        
-      <div className='fixed right-0 bottom-0 z-40 h-full bg-primary-100 drop-shadow-xl w-[300px]'>
+      <div className='abosolute h-screen'>
+      <div className='fixed right-0 bottom-0 z-50 h-screen bg-primary-100 drop-shadow-xl w-[300px]'>
 
         <div className='flex flex-col gap-4  h-full px-4 py-4 items-center justify-center'>
         <button className='rounded-full p-2 self-end hover:bg-primary-300 hover:text-white' onClick={() => setMenutoggle(!menutoggle)}><XMarkIcon className='h-6 w-6'></XMarkIcon></button> 
@@ -100,6 +101,7 @@ const Navbar = ({topOfPage,selectedPage,setSelectedPage}: SelectedPageProps) => 
         </div>
         
       </div>
+      </div> 
 
       }
     </nav>

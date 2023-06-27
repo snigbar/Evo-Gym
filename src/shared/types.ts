@@ -9,5 +9,10 @@ export type SelectedPageProps = {
     Benifits = 'benifits',
     OurClasses = 'ourclasses',
     ContuctUs = 'contactus',
-  
+  }
+
+  export interface BenifitType {
+    icon: JSX.Element
+    title: string
+    description: string
   }

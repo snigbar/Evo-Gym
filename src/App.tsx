@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar"
 import { useEffect, useState } from "react"
 import { SelectedPageType } from "./shared/types"
 import Home from "./Sections/Home"
+import Benifits from "./Sections/Benifits"
 
 
 function App() {
@@ -26,9 +27,10 @@ function App() {
 
   return (
     
-      <div>
+      <div className="relative">
         <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} topOfPage={topOfPage}></Navbar>
         <Home setSelectedPage={setSelectedPage}></Home>
+        <Benifits setSelectedPage={setSelectedPage}></Benifits>
       </div>
       
   )
