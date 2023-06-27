@@ -2,7 +2,7 @@
 # EVO GYM
 
 ## [EVO GYM (Live)](https://evo-gym-f42.pages.dev/)
-#### [This Project is Inspired By EdRoh](https://evo-gym-f42.pages.dev/](https://github.com/ed-roh)
+#### This Project is Inspired By [EdRoh](https://github.com/ed-roh)
 
 -------
 
