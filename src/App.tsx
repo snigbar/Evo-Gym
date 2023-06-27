@@ -5,6 +5,7 @@ import Home from "./Sections/Home"
 import Benifits from "./Sections/Benifits"
 import OurClasses from "./Sections/OurClasses"
 import ContactUs from "./Sections/ContactUs"
+import Footer from "./Sections/Footer"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Benifits setSelectedPage={setSelectedPage}></Benifits>
         <OurClasses setSelectedPage={setSelectedPage}></OurClasses>
         <ContactUs setSelectedPage={setSelectedPage}></ContactUs>
+        <Footer></Footer>
       </div>
       
   )

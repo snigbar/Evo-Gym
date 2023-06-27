@@ -11,11 +11,11 @@ type Props = {
 
 const ContactUs = ({setSelectedPage}: Props) => {
 
-    const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
-  const { register, trigger, reset, formState: { errors } } = useForm();
+const { register, trigger, reset, formState: { errors } } = useForm();
 
-  const onSubmit = async (e: React.FormEvent) => {
+const onSubmit = async (e: React.FormEvent) => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
